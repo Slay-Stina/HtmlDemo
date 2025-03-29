@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <section id="contact-section">
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2069.6499486816056!2d16.992331477099224!3d58.752706074340196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f2d129cc0e17d%3A0xa130af65d90fd197!2sIndustrigatan%201%2C%20611%2038%20Nyk%C3%B6ping!5e0!3m2!1ssv!2sse!4v1743161550838!5m2!1ssv!2sse"
+            id="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+        <form action="">
+            <input type="text" name="namn" placeholder="Namn">
+            <input type="text" placeholder="Adress">
+            <input type="email" name="email" placeholder="Epost">
+            <input type="tel" placeholder="Telefon" required>
+
+            <div class="choice-container">
+                <div class="input-choice">
+                    <input type="radio" name="customer" id="private" value="private">
+                    <label for="private">Privat</label>
+                </div>
+                <div class="input-space"></div>
+                <div class="input-choice">
+                    <input type="radio" name="customer" id="business" value="business">
+                    <label for="business">Företag</label>
+                </div>
+            </div>
+
+            <select name="employees" id="employees">
+                <option value="">Antal anställda</option>
+                <option value="1-100">1-100</option>
+                <option value="101-1000">101-1000</option>
+                <option value="1000+">Mer än 1000</option>
+            </select>
+
+            <textarea name="message" id="message" placeholder="Skriv ditt meddelande.." rows="5"></textarea>
+
+            <div class="choice-container">
+                <div class="input-choice">
+                    <input type="checkbox" name="newsletter" id="newsletter" value="yes">
+                    <input type="hidden" name="newsletter" value="">
+                    <label for="newsletter">Ja! Jag vill ha nyhetsbrev om maskiner</label>
+                </div>
+                <div class="input-space"></div>
+                <div class="input-choice">
+                    <input type="checkbox" name="newsletter" id="newsletter" value="yes">
+                    <input type="hidden" name="newsletter" value="">
+                    <label for="newsletter">Ja! Jag vill bli kontaktad över telefon</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Skicka">
+        </form>
+    </div>
+</section>
+</body>
+
+</html>
