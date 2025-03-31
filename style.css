@@ -10,10 +10,13 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
-section {
+section, #contact-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+#contact-section {
+    flex-direction: row-reverse;
 }
 .menu {
     display: flex;
@@ -144,7 +147,4 @@ input[type=radio]:hover, .choice-container label:hover {
     height: -webkit-fill-available;
     border: 0;
     margin: 10px;
-}
-#contact-section {
-    flex-direction: row-reverse;
 }
